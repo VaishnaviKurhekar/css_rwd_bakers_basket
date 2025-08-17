@@ -1,0 +1,64 @@
+#hero-section2 {
+  height: 40vh;
+  background: url('images/pexels-pixelperfectmom-18296426.jpg') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+#hero-section2 h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+}
+#order-flow {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+
+
+#order-flow h2 {
+  font-size: 2.2rem;
+  color: #8b0000;
+  margin-bottom: 2rem;
+  font-family:sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Image Container */
+.order-image {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image Styling */
+.order-image img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.order-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  #order-flow {
+    padding: 5rem 3rem;
+  }
+
+  #order-flow h2 {
+    font-size: 2.5rem;
+  }
+}

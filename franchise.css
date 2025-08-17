@@ -1,0 +1,123 @@
+#hero-section4 {
+  background: url('images/pexels-ketut-subiyanto-4963437.jpg') no-repeat  center/cover ;
+  height: 30vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-content h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+
+}
+
+/* APPLICATION SECTION */
+#application {
+  padding: 4rem 2rem;
+  
+  
+}
+
+.application-head {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.application-head h2 {
+  font-size: 2.5rem;
+  color: #c94f4f;
+  margin-bottom: 1rem;
+}
+
+.application-head p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* FORM LAYOUT */
+.application-form form {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.application-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.application-form input,
+.application-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.application-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Make textarea and submit button span full width */
+.application-form textarea,
+.application-form button {
+  grid-column: span 2;
+}
+
+/* SUBMIT BUTTON */
+button {
+  background-color: #d49e08;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-self: start;
+}
+
+button:hover {
+  background-color: #a63c3c;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  #hero-section {
+    height: 40vh;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .application-head h2 {
+    font-size: 2rem;
+  }
+
+  .application-form form {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .application-form textarea,
+  .application-form button {
+    grid-column: span 1;
+  }
+}

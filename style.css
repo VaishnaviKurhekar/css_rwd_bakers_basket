@@ -1,0 +1,451 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff8f0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 120px;
+}
+
+#menu-toggle  {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+nav {
+  display: none;
+  width: 100%;
+}
+
+nav.active {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0.5rem 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.order-btn a {
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+#hero-section {
+  min-height: 100vh;
+  background: url(images/pexels-taryn-elliott-4099124.jpg)center/cover fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: orange;
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+.hero-content {
+  margin-top: auto;
+  padding: 2rem;
+  text-align: start;
+ 
+}
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+    font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+}
+.hero-content h3 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+
+.hero-content a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+}
+
+
+
+/* Categories */
+#categories {
+  background-color: rgb(223, 229, 227);
+  margin-bottom: 30px;
+}
+.categories-head {
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: brown;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.categories img {
+  width: 100%;
+  border-radius: 8px;
+}
+.category:hover img {
+  transform: scale(1.05);
+  box-shadow: #333 2px;
+  
+}
+
+
+
+/* About Section */
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  
+}
+.about-content {
+  padding: 2rem 1rem;
+  text-align: center;
+
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: brown;
+}
+
+.about-text p {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+#about button {
+  background-color: white; 
+  color: brown;
+  border: 1px solid;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+
+#about button:hover {
+  background-color: #e65c50;
+ }
+
+
+/* Banner */
+
+#banner img {
+  width: 100%;
+}
+
+/* Reviews */
+#reviews {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+#reviews h2 {
+    font-size: 1.8rem;
+    color: brown;
+ 
+}
+
+.testimonial {
+  margin: 1rem auto;
+  max-width: 600px;
+  background-color: #fff;
+  border-left: 4px solid #ff6f61;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  color: #f2ebeb;
+}
+#contact h2 {
+   font-size: 1.8rem;
+    color: brown;
+ 
+}
+.contact-details {
+ background: url(images/contact.jpeg);
+ background-repeat: no-repeat;
+ background-size:cover;
+ }
+
+.contact-details img  {
+  width: 100px;
+  
+}
+
+/* Footer */
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-form input
+ {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-form button {
+  padding: 0.5rem 1rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-top: 1rem;
+}
+.footer-links a {
+ 
+  text-decoration: none;
+  color: #ccc;
+}
+.social-icons {
+  
+ display: flex;
+ gap: 1rem;
+ justify-content: center;
+  
+  }
+.social-icons span {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons span i:hover {
+  color: #ff6f61;
+  transform: scale(1.2);
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  nav {
+    display: block !important;
+    width: auto;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+  
+
+  
+  #about {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+    
+  }
+
+  .about-image {
+    flex: 1;
+  }
+
+  .about-image img {
+  width: 100%;
+  height:min-content;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+  .about-text {
+   flex:1;
+    padding: 0 2rem;
+  }
+
+  .about-content {
+    text-align: left;
+  }
+
+ 
+  
+
+  .about-content img {
+    width: 60px;
+    margin-bottom: 1rem;
+    
+  }
+
+.about-text p {
+ 
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+  #about button {
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+  }
+
+  #about button:hover {
+    background-color: #e65c50;
+    color: white;
+  }
+
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 5rem 3rem;
+    max-width: 768px;
+    margin: 0 auto;
+    justify-items: center;
+  }
+  
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px)  {
+
+   
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    padding: 5rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+  }
+
+  .categories figure {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .categories figure img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .categories figure:hover {
+    transform: scale(1.05);
+    
+  }
+  
+
+
+}
+
+
+
+ 
+/*------------------------------- Customized_cakes Page---------------------------*/
+/* Order Flow Section */
+
+
+/* Franchise Page Styles*/
+
+/* HERO SECTION */
