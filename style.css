@@ -109,6 +109,10 @@ nav ul li a {
   font-size: 1.1rem;
   font-weight: bold;
   padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  color: #eae9e5;
+  background-color: #a43f3f;
+  border-radius: 10px;
 }
 
 
